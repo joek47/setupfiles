@@ -1,4 +1,4 @@
-" delek morning molokai
+" vim setup for python
 " colorscheme delek
 syntax on
 set tabstop=4	    " number of spaces per TAB
