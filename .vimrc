@@ -1,4 +1,4 @@
-" vim setup for python
+" delek morning molokai
 " colorscheme delek
 syntax on
 set tabstop=4	    " number of spaces per TAB
@@ -14,10 +14,13 @@ set wildmenu        " autocomplete
 set showmatch       " highlight matching braces
 set incsearch       " search as characters are entered
 set hlsearch        " highlight matches
+set ignorecase
+set smartcase       " only case insensitive if all lower case
 set foldmethod=indent   " good for python
 set foldnestmax=10      " max nested folds
 set foldenable      " enable folding
 " set foldlevelstart=0   " default folds
+nnoremap <space> za
 nnoremap j gj           " move around wrap lines
 nnoremap k gk
 set backup
