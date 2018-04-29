@@ -1,13 +1,16 @@
-## read our directory
+## Read our directory
 `:read !ls`
 
-## add quotation marks to lines
+## Add quotation marks to lines
 `:norm I"`
 
 `:norm A"`
 
-## map and check output
+## Map and check output
 `:map <leader>p 0yi":!echo <C-R>"`
 
-## open files with gedit
+## Open files with gedit
 `:map <leader>p 0yi":!gedit <C-R>" & disown<CR><CR>`
+
+## Acknowledgement
+[Link](https://youtu.be/hraHAZ1-RaM)
