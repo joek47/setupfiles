@@ -2,6 +2,8 @@
 `:read !ls`
 
 ## Add quotation marks to lines
+In visual mode:
+
 `:norm I"`
 
 `:norm A"`
