@@ -6,6 +6,7 @@ set softtabstop=4	" number of spaces per TAB in insert mode
 set shiftwidth=4
 set expandtab       " TAB becomes spaces
 set number          " line numbers
+set colorcolumn=80
 set showcmd         " show last command in bottom bar
 set cursorline      " highlight current line
 filetype indent on  " load language specific indentation
@@ -28,3 +29,5 @@ set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set backupskip=/tmp/*,/private/tmp/*
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
+
+set laststatus=2

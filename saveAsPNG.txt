@@ -1,0 +1,94 @@
+var current_dir;
+var current_file;
+var filename=""; 
+var fl = getFileList("/home/lam/DotLineDetection/A4C_PWTDI_TrV_sample/");
+print("File list ", fl[0]);
+
+macro "Macro export bar [f7]" {
+
+    run("Create Mask");
+    run("Invert");
+
+    //write to masks folder
+    //create image folder
+    dest_folder = current_dir + filename[0] ; 
+    if(File.exists(dest_folder) !=1){
+        File.makeDirectory(dest_folder);
+        print("Creating: ", dest_folder);
+    } else {
+        print("Image folder already exists");
+    }
+
+    //create mask folder
+    dest_folder = dest_folder + '/bar/'; 
+    if(File.exists(dest_folder) !=1){
+        File.makeDirectory(dest_folder);
+        print("Creating bar folder: ", dest_folder);
+    } else {
+        print("Bar folder already exists");
+    }
+
+    dest = dest_folder + filename[0] + "b-1";
+    print("Saving bar mask to", dest);
+    saveAs("png", dest);
+    close();
+    close();
+    
+    // move picture file
+    dest_folder = current_dir + filename[0] + '/image/';
+    File.makeDirectory(dest_folder);
+    print("Creating picture folder: ", dest_folder);
+
+    File.copy(current_dir+current_file, dest_folder + current_file);
+    File.delete(current_dir + current_file);
+}
+
+    
+  
+macro "Macro export line [f6]" {
+
+    run("Create Mask");
+    run("Invert");
+
+    //write to masks folder
+    //create image folder
+    dest_folder = current_dir + filename[0] ; 
+    if(File.exists(dest_folder) !=1){
+        File.makeDirectory(dest_folder);
+        print("Creating image folder", dest_folder);
+    } else {
+        print("Image folder already exists");
+    }
+
+    //create mask folder
+    dest_folder = dest_folder + '/line/'; 
+    if(File.exists(dest_folder) !=1){
+        File.makeDirectory(dest_folder);
+        print("Creating: ", dest_folder);
+    } else {
+        print("Line folder already exists");
+    }
+
+    dest = dest_folder + filename[0] + "l-1";
+    print("Saving line mask to", dest);
+    saveAs("png", dest);
+    close();
+    setTool("polygon");
+    print("Please make second selection");
+}
+
+macro "Zoom to screen [f5]" {
+    current_dir = getInfo("image.directory");
+    current_file = getInfo("image.filename");
+    filename = split(current_file , ".");
+    setLocation(100,100, 1500,1500);    
+    setTool("polygon");
+    print("Please make first selection");
+    
+}
+
+macro "rectangle [f4]" {
+
+    setTool("rectangle");
+
+}
