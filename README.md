@@ -24,3 +24,7 @@
 - set password expiry date chage -M 30 <acct name>
 - [Add sudo insults](https://www.tecmint.com/sudo-insult-when-enter-wrong-password/)
 
+### Lock screen
+- [Lock shortcut](https://askubuntu.com/questions/1242110/after-upgrading-to-ubuntu-20-04-lockscreen-not-working)
+### Firewall
+- [iptables](https://www.digitalocean.com/community/tutorials/iptables-essentials-common-firewall-rules-and-commands)
