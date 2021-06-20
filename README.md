@@ -27,4 +27,5 @@
 ### Lock screen
 - [Lock shortcut](https://askubuntu.com/questions/1242110/after-upgrading-to-ubuntu-20-04-lockscreen-not-working)
 ### Firewall
-- [iptables](https://www.digitalocean.com/community/tutorials/iptables-essentials-common-firewall-rules-and-commands)
+- [Iptables](https://www.digitalocean.com/community/tutorials/iptables-essentials-common-firewall-rules-and-commands)
+- [TCP wrappers](https://www.tecmint.com/secure-linux-tcp-wrappers-hosts-allow-deny-restrict-access/)
