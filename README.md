@@ -30,6 +30,9 @@
 - [Iptables](https://www.digitalocean.com/community/tutorials/iptables-essentials-common-firewall-rules-and-commands)
 - [TCP wrappers](https://www.tecmint.com/secure-linux-tcp-wrappers-hosts-allow-deny-restrict-access/)
 
-### File syste
+### File system
 - Groups/id -Gn
 - [Umask](https://www.liquidweb.com/kb/what-is-umask-and-how-to-use-it-effectively/)
+- [setuid](https://attack.mitre.org/techniques/T1548/001/)
+- [Sticky bit](https://www.thegeekstuff.com/2013/02/sticky-bit/)
+- [lsattr immutable](https://www.tecmint.com/chattr-command-examples/)
