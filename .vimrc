@@ -10,7 +10,12 @@ set colorcolumn=80
 set showcmd         " show last command in bottom bar
 set cursorline      " highlight current line
 filetype indent on  " load language specific indentation
+
+" indent at next line will follow the previous line
 set autoindent
+
+" indent after curly brace
+set smartindent
 set wildmenu        " autocomplete
 set showmatch       " highlight matching braces
 set incsearch       " search as characters are entered
@@ -31,3 +36,15 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
 
 set laststatus=2
+
+" show 5 lines above when zt
+set scrolloff=5
+
+" linebreak
+set lbr
+
+set bg=dark
+" set bg=light
+
+" hide buffer change warning
+set hidden
