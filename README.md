@@ -36,3 +36,7 @@
 - [setuid](https://attack.mitre.org/techniques/T1548/001/)
 - [Sticky bit](https://www.thegeekstuff.com/2013/02/sticky-bit/)
 - [lsattr immutable](https://www.tecmint.com/chattr-command-examples/)
+
+
+### Apps
+- [Vscode](https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-20-04/)

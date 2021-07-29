@@ -48,3 +48,14 @@ set bg=dark
 
 " hide buffer change warning
 set hidden
+
+" move to window
+map <leader>h <C-w>h
+map <leader>j <C-w>j
+map <leader>k <C-w>k
+map <leader>l <C-w>l
+
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
